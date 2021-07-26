@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie Seat Booking App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="app.js"></script>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <form>
+            <label for="movies">Pick a movie:</label>
+            <select name="movies" id="movies">
+                <option value="Avengers: Endgame ($10)">Avengers: Endgame ($10)</option>
+                <option value="Joker ($12)">Joker ($12)</option>
+                <option value="Toy Story 4 ($8)">Toy Story 4 ($8)</option>
+                <option value="The Lion King ($9)">The Lion King ($9)</option>
+            </select>
+        </form>
+
+        <ul>
+            <li><div class="naImage"></div> N/A</li>
+            <li><div class="selectedImage"></div> Selected</li>
+            <li><div class="occupiedImage"></div> Occupied</li>
+        </ul>
+
+        <div class="visual-screen"></div>
+
+        <div class="seats">
+            <div class="first-column"></div>
+            <div class="second-column"></div>
+            <div class="third-column"></div>
+        </div>
+
+        <h4>You have selected <span id="numberOfSeats">0</span> seats for a price of <span id="price">0</span>$</h4>
+    </div>
 </body>
 </html>
