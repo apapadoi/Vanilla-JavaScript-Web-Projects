@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Exchange Rate Calculator</title>
+</head>
+<body>
+    <div id="wrapper">
+        <img src="images/dollar.png" alt="gear that contains a dollar sign">
+        <h1>Exchange Rate Calculator</h1>
+        <h4>Choose the currency and the amounts to get the exchange rate</h4>
+        <div class="from">
+            <select name="fromCurrency" id="fromCurrency"></select>
+            <input type="text" id="fromCurrencyInput" name="fromCurrencyInput" autocomplete="off">
+        </div>
+        <div class="swap">
+            <input type="button" value="Swap" autocomplete="false">
+            <h4 class="fullRateOneToOne"><span class="fromValue">1</span> <span class="fullFromCurrency">AED</span> = <span class="toValue">1.181945</span> <span class="fullToCurrency">AFN</span></h4>
+        </div>
+        <div class="to">
+            <select name="toCurrency" id="toCurrency"></select>
+            <h3 id="toCurrencyInput"></h3>
+        </div>
+    </div>
+</body>
+</html>

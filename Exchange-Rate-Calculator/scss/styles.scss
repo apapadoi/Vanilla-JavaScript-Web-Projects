@@ -1,0 +1,90 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+#wrapper {
+    margin: 5% auto;
+    width: 65%;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h1, h4, h5 {
+    color: $primaryColor;
+}
+
+.from, .swap, .to {
+    margin-bottom: 45px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#fromCurrency {
+    grid-column: 3 / 4;
+    &+ input {
+        grid-column: 9 / 11;
+    }
+}
+
+#toCurrency {
+    grid-column: 3 / 4;
+    &+ h3 {
+        grid-column: 9 / 11;
+    }
+}
+
+.swap {
+    input[type=button] {
+        grid-column: 3 / 4;
+    }
+
+    h4 {
+        grid-column: 8 / 11;
+        text-align: right;
+    }
+}
+
+input {
+    height: 100%;
+}
+
+input[type=button] {
+    background: $primaryColor;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.61);
+    cursor: pointer;
+}
+
+.fullRateOneToOne {
+    margin: auto 0;
+}
+
+input[type=text]:focus, input[type=text] {
+    background: none;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 1.4em;
+}
+
+h3 {
+    font-weight: 500;
+    text-align: right;
+    font-size: 1.4em;
+}
+
+select {
+    border-radius: 8px;
+    border-color: rgba(0,0,0,0.15);
+    background: white;
+    outline: none;
+    max-height: 30px;
+}
