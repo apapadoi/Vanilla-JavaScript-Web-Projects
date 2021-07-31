@@ -15,10 +15,12 @@ cd ..
 echo "<!DOCTYPE html>" >> index.html
 echo "<html lang="en">" >> index.html
 echo "<head>" >> index.html
-echo -e "\t<meta charset="UTF-8">" >> index.html
-echo -e "\t<meta http-equiv="X-UA-Compatible" content="IE=edge">" >> index.html
-echo -e "\t<meta name="viewport" content="width=device-width, initial-scale=1.0">" >> index.html
-echo "<title>Document</title>" >> index.html
+echo -e "\t<meta charset=\"UTF-8\">" >> index.html
+echo -e "\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">" >> index.html
+echo -e "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" >> index.html
+echo -e "\t<link rel=\"stylesheet\" href=\"./css/styles.css\">" >> index.html
+echo -e "\t<script src=\"app.js\"></script>" >> index.html
+echo -e "\t<title>Document</title>" >> index.html
 echo "</head>" >> index.html
 echo "<body>" >> index.html
 echo -e "\n</body>" >> index.html

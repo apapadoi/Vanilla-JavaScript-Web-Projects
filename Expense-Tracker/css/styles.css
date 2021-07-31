@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  font-family: 'Roboto', arial;
+  background: #f8f9fb;
+}
+
+html, body, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #f7f5f7;
+}
+
+#wrapper {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 1% auto;
+  width: 50%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+h2 + h3 {
+  text-align: left;
+  margin: 35px 25% 0 25%;
+}
+
+h3 + h1 {
+  text-align: left;
+  margin: 0 25% 0 25%;
+}
+
+#income-expense-container {
+  background: white;
+  margin: 25px auto 10px auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#income-expense-container::after {
+  content: "";
+  clear: both;
+}
+
+#income-expense-container div {
+  margin: 15px auto;
+}
+
+#income-expense-container div > :nth-child(even) {
+  margin-bottom: 0;
+}
+
+#income-expense-container + h3 {
+  text-align: left;
+  margin: 0 25% 0 25%;
+}
+
+#income-expense-container > div:nth-child(1) > h4:nth-child(2) {
+  color: #2fc66c;
+  font-size: 1.2em;
+}
+
+#income-expense-container > div:nth-child(3) > h4:nth-child(2) {
+  color: #b93632;
+  font-size: 1.2em;
+}
+
+.vl {
+  border-left: 1px solid #eae9eb;
+  height: 75px;
+  display: inline-block;
+}
+
+.hl {
+  border-bottom: 2px solid #d7d6d8;
+  margin: 5px 25%;
+}
+
+.hl + h4 {
+  text-align: left;
+  margin: 20px 25% 10px 25%;
+}
+
+.history-transactions-container + h3 {
+  text-align: left;
+  margin: 25px 25% 5px 25%;
+}
+
+#wrapper > input[type=text]:nth-child(11) {
+  border-width: 1px;
+  border-color: #e8e7e9;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 25%;
+  width: 50%;
+  display: block;
+  height: 25px;
+  padding: 3%;
+  font-size: 1.1em;
+  box-sizing: border-box;
+}
+
+#wrapper > input[type=text]:nth-child(11):focus {
+  outline-color: #9777f8;
+}
+
+input + h4 span {
+  display: block;
+}
+
+input + h4 {
+  text-align: left;
+  margin: 10px 25%;
+  font-weight: 600;
+}
+
+#wrapper > input[type=text]:nth-child(13) {
+  border-width: 1px;
+  border-color: #e8e7e9;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 25%;
+  width: 50%;
+  display: block;
+  height: 25px;
+  padding: 3%;
+  font-size: 1.1em;
+  box-sizing: border-box;
+}
+
+#wrapper > input[type=text]:nth-child(13):focus {
+  outline-color: #9777f8;
+}
+
+button {
+  margin: 10px 25%;
+  background: #9777f8;
+  color: white;
+  width: 50%;
+  box-sizing: border-box;
+  outline: 0;
+  padding: 10px 5px 10px 5px;
+  font-size: 1.2em;
+  border: 0;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.transaction-element {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25% 5px 25%;
+  width: 50%;
+}
+
+.transaction-element h5 {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.transaction-amount {
+  padding: 10px;
+  text-align: right;
+}
+
+.transaction-text {
+  padding: 10px;
+  display: inline-block;
+}
+
+.income {
+  border-right: 3px solid #2fc66c;
+}
+
+.expense {
+  border-right: 3px solid #b93632;
+}
+/*# sourceMappingURL=styles.css.map */

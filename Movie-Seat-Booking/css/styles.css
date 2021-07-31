@@ -40,16 +40,11 @@ form {
 }
 
 ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background: #201c2a;
   padding: 1px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul::after {
@@ -92,20 +87,16 @@ ul div {
   width: 90%;
   height: 175px;
   background: #ffffff;
-  -webkit-box-shadow: 0px 1px 2px 2px rgba(255, 255, 255, 0.8);
-          box-shadow: 0px 1px 2px 2px rgba(255, 255, 255, 0.8);
-  -webkit-transform: rotateX(65deg);
-          transform: rotateX(65deg);
+  box-shadow: 0px 1px 2px 2px rgba(255, 255, 255, 0.8);
+  transform: rotateX(65deg);
   margin: 20px auto;
 }
 
 .seats {
   width: 100%;
   height: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 50% 25%;
-      grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 25% 50% 25%;
   margin: 10px auto;
   justify-items: space-between;
 }
@@ -124,28 +115,22 @@ ul div {
 .first-column {
   width: auto;
   height: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .second-column {
   width: 100%;
   height: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .third-column {
   width: 100%;
   height: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .occupied {
@@ -161,17 +146,14 @@ ul div {
 }
 
 #movies {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   padding: 5px 15px 5px 15px;
   margin: 5px;
   margin-left: 10px;
   background: #ffffff;
   border: none;
   outline: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-weight: bold;
 }
 
