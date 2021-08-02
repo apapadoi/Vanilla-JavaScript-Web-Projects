@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/styles.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+	<script type="module" src="app.js"></script>
+	<title>Greece Vaccination Tracker</title>
+</head>
+<body>
+	<h2>Greece Covid-19 Data</h2>
+	<section class="side-data-container">
+		<div class="deaths data-container">
+			<h2>Deaths</h2>
+			<h2 class="deaths-count">1500</h2>
+		</div>
+		<div class="confirmed data-container">
+			<h2>Confirmed</h2>
+			<h2 class="confirmed-count">1500</h2>
+		</div>
+		<div class="rapid-tests data-container">
+			<h2>Rapid Tests</h2>
+			<h2 class="rapid-tests-count">1500</h2>
+		</div>
+		<div class="self-tests data-container">
+			<h2>Self Tests</h2>
+			<h2 class="self-tests-count">1500</h2>
+		</div>
+	</section>
+	<section class="subtitles-container">
+		<h2>Greece Vaccinations Data</h2>
+	</section>
+	<section class="chart-container">
+		<canvas id="vaccinations-chart"></canvas>
+	</section>
+</body>
+</html>

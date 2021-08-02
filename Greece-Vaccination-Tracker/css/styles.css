@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  font-family: 'Roboto', arial;
+}
+
+html, body, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  background: #394c91;
+  background: linear-gradient(90deg, #394c91 0%, #172359 100%);
+  color: white;
+}
+
+h2 {
+  margin: 15px 25px;
+  font-weight: 500;
+}
+
+.side-data-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 25px 15px 25px;
+}
+
+.side-data-container h2 {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.data-container {
+  height: 150px;
+  width: 225px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.subtitles-container {
+  display: flex;
+}
+
+.deaths {
+  background: #37ccee;
+  background: linear-gradient(198deg, #37ccee 0%, #27a0da 100%);
+}
+
+.confirmed {
+  background: #7d48ea;
+  background: linear-gradient(198deg, #7d48ea 0%, #4e5bd1 100%);
+}
+
+.rapid-tests {
+  background: #2b92e0;
+  background: linear-gradient(198deg, #2b92e0 0%, #3757c8 100%);
+}
+
+.self-tests {
+  background: #f8478a;
+  background: linear-gradient(198deg, #f8478a 0%, #db6b4c 100%);
+}
+
+.chart-container {
+  position: relative;
+  height: 53vh;
+  width: 98vw;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=styles.css.map */

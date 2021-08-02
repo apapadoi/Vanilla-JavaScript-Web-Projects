@@ -1,0 +1,62 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+
+:root {
+    background: rgb(57,76,145);
+    background: linear-gradient(90deg, rgba(57,76,145,1) 0%, rgba(23,35,89,1) 100%);
+    color: white;
+}
+
+h2 {
+    margin: 15px 25px;
+    font-weight: 500;
+}
+
+.side-data-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 25px 15px 25px;
+    h2 {
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+}
+
+.data-container {
+    height: 150px;
+    width: 225px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.subtitles-container {
+    display: flex;
+}
+
+.deaths {
+    background: rgb(55,204,238);
+    background: linear-gradient(198deg, rgba(55,204,238,1) 0%, rgba(39,160,218,1) 100%);
+}
+
+.confirmed {
+    background: rgb(125,72,234);
+    background: linear-gradient(198deg, rgba(125,72,234,1) 0%, rgba(78,91,209,1) 100%);
+}
+
+.rapid-tests {
+    background: rgb(43,146,224);
+    background: linear-gradient(198deg, rgba(43,146,224,1) 0%, rgba(55,87,200,1) 100%);
+}
+
+.self-tests {
+    background: rgb(248,71,138);
+    background: linear-gradient(198deg, rgba(248,71,138,1) 0%, rgba(219,107,76,1) 100%);
+}
+
+.chart-container {
+    position: relative;
+    height: 53vh;
+    width: 98vw;
+    margin: 0 auto;
+}
