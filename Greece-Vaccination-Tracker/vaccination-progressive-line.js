@@ -3,16 +3,10 @@
 let config = {}
 
 function animate(data, data2, label, label2) {
-  data = [];
-  data2 = [];
-  let prev = 100;
-  let prev2 = 80;
-  for (let i = 0; i < 1000; i++) {
-  prev += 5 - Math.random() * 10;
-  data.push({x: i, y: prev});
-  prev2 += 5 - Math.random() * 10;
-  data2.push({x: i, y: prev2});
-}
+  for (let i = 0; i < data.length; i++) {
+    data[i] = {x:i, y: data[i]};
+    data2[i] = {x:i, y: data2[i]};
+  }
 
   const totalDuration = 10000;
   const delayBetweenPoints = totalDuration / data.length;
@@ -45,21 +39,21 @@ function animate(data, data2, label, label2) {
       }
     }
   };
-  
+
   config = {
     type: 'line',
     data: {
       datasets: [{
-        label: 'Dataset 1',
+        label: label,
         borderColor: '#2e82cc',
-        borderWidth: 2,
+        borderWidth: 3,
         radius: 0,
         data: data,
       },
       {
-        label: 'Dataset 2',
+        label: label2,
         borderColor: '#e8fbfe',
-        borderWidth: 2,
+        borderWidth: 3,
         radius: 0,
         data: data2,
       }]
@@ -76,8 +70,14 @@ function animate(data, data2, label, label2) {
       },
       scales: {
         x: {
-          type: 'linear'
-        }
+          type: 'linear',
+        },
+        xAxes: {
+          title: {
+              display: true,
+              text: 'Days since vaccination started',
+          }
+      }
       }
     }
   };

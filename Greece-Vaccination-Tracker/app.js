@@ -58,30 +58,43 @@ async function getVaccinationData() {
         }
     );
     const initialData = await response.json();
-    console.log(initialData);
-
+        
     const ctx = document.getElementById('vaccinations-chart').getContext('2d');
     const data = await calculateTotalVaccinations(initialData);
     const data2 = await calculateTotalVaccinationsDose1(initialData);
 
     await animate(data, data2, 'Total Vaccinations', 'Total Vaccinations Dose 1')
-    // todo group vaccinations by day and add x and y property on the data passed to the animatee function
-    // todo of the vaccination-progressive-line.js module
 	const myChart = new Chart(ctx, config);
 }
 
 async function calculateTotalVaccinations(data) {
     const vaccinations = [];
 
-    data.forEach(element => {
-        vaccinations.push(element.totalvaccinations);
-    });
+    for(let i=0;i<data.length/74;i++) {
+        let currentData = data.slice(i*74, (i+1)*74);
+        let currentSum = 0;
+        currentData.forEach(item => {
+            currentSum += item.totalvaccinations;
+        });
+        vaccinations.push(currentSum);
+    }
 
     return vaccinations;
 }
 
 async function calculateTotalVaccinationsDose1(data) {
+    const vaccinations = [];
 
+    for(let i=0;i<data.length/74;i++) {
+        let currentData = data.slice(i*74, (i+1)*74);
+        let currentSum = 0;
+        currentData.forEach(item => {
+            currentSum += item.totaldose1;
+        });
+        vaccinations.push(currentSum);
+    }
+
+    return vaccinations;
 }
 
 function main() {
